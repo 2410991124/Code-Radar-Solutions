@@ -4,7 +4,7 @@ int main(){
     // scanf("%d", %a);
     switch (a){
         case 1:
-            printf("%d", 31);
+            printf("31");
             break;
         case 2:
             printf("28");
