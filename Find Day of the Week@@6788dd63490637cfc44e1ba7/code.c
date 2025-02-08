@@ -4,8 +4,8 @@ int main(){
     scanf("%d", &a);
     switch (a){
         case 1:
-            printf("Monday");
-            break;
+             printf("Monday");
+             break;
         case 2:
              printf("Tuesday");
              break;
