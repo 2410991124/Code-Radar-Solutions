@@ -2,8 +2,8 @@
 int main(){
     int a, b, N;
     scanf("%d", &N);
-    for(a=3; a<=N; a--){
-        for(b=3; b<=a; b--)
+    for(a=N; a>=1; a--){
+        for(b=1; b<=a; b++)
         printf("*");
         printf("\n");
     }
