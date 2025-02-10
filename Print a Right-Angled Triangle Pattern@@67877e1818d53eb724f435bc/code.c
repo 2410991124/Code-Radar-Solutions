@@ -5,7 +5,7 @@ int main(){
     for(a=1; a<=N; a++){
         for(b=1; b<=a; b++){
         print("*");
-        print("\n");
         }
+        print("\n");
     }
 }
