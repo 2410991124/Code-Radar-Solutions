@@ -1,12 +1,11 @@
 #include <stdio.h>
 int main(){
-    int a;
-    int i=0;
-    scanf("%d", &a);
-    while(i>=1){
+    int a, b;
+    int N;
+    scanf("%d", &N);
+    for(a=1; a<=N; a++){
+        for(b=N; b<=a; b--)
         printf("*");
-        i--;
+        printf("\n");
     }
-    // printf("\n");
-    // return 0;
 }
