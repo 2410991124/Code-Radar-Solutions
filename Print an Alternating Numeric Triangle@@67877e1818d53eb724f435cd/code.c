@@ -4,7 +4,15 @@ int main(){
     scanf("%d", &N);
     for(int i=1; i<=N; i++){
         for(int b=1; b<=i; b++)
-        printf("%d ", 1);
-        printf("\n");
+       if(N==1){
+        printf("%d", 1);
+        break;
+       }
+       else if("b%2==1"){
+        printf("%d", 0);
+       }
+       else{
+        printf("%d", 1);
+       }
     }
 }
