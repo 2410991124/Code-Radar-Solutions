@@ -6,7 +6,7 @@ int main(){
         for(int b=1; b<=i; b++)
        if(N==1){
         printf("%d", 1);
-        // print("\n");
+        printf("\n");
         break;
        }
        else if("b%2==1"){
