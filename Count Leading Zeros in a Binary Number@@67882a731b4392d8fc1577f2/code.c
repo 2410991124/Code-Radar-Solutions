@@ -8,6 +8,6 @@ int main(){
         a=a>>1;
         p++;
     }
-    c=32-p;
+    int c=32-p;
     printf("%d", c);
 }
