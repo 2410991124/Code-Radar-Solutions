@@ -6,7 +6,7 @@ int main(){
     for(int i=2; i<n-1; i++){
         if(n%i==0){
             prime=1;
-            break;
+            // break;
         }
         else{
             prime=0;
