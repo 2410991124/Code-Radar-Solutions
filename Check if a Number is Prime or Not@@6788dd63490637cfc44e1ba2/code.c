@@ -12,13 +12,13 @@ int main(){
             printf("Not Prime");
             break;
         }
-        // else{
-            // printf("Prime");
+        else{
+            printf("Prime");
             // brea
-        // }
+        }
     }
     // else{
-    printf("Prime");
+    // printf("Prime");
     // }
     return 0;
 }
