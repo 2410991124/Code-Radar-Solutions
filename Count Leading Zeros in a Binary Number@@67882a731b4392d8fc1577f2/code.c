@@ -8,7 +8,7 @@ int main(){
         l==32;
     }
     else{
-        int p=0;
+        int p=1;
         while((a&1)==0){
         a=a>>1;
         p++;
