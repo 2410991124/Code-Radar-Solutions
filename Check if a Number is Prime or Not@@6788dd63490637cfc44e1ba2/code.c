@@ -16,8 +16,8 @@ int main(){
             // brea
         // }
     }
-    // else{
-    // printf("Prime");
-    // }
+    else{
+    printf("Prime");
+    }
     return 0;
 }
