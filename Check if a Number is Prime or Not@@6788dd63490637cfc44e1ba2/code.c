@@ -8,17 +8,17 @@ int main(){
     //     // break;
     }
     for(int i=2; i*i<=a; i++){
-        if(a%i!=0){
-            printf("Prime");
-            break;
-        }
-        else{
+        if(a%i==0){
             printf("Not Prime");
-            // brea
+            return 0;
         }
+        // else{
+        //     printf("Prime");
+        //     // brea
+        // }
     }
-    // else{
+    else{
     // printf("Prime");
-    // }
+    }
     return 0;
 }
