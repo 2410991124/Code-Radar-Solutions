@@ -4,20 +4,20 @@ int main(){
     scanf("%d", &a);
     if(a<=1){
         printf("Not Prime");
-        break;
+        // break;
     }
     for(int i=2; i*i<=a; i++){
         if(a%i==0){
             printf("Not Prime");
-            break;
+            // break;
         }
-        else{
-            printf("Prime");
+        // else{
+            // printf("Prime");
             // brea
-        }
+        // }
     }
     // else{
-        // printf("Prime");
+    printf("Prime");
     // }
     return 0;
 }
