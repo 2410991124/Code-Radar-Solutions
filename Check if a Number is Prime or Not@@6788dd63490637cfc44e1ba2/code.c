@@ -12,6 +12,6 @@ int main(){
             prime=0;
         }
     }
-    if(prime==1)?printf("Not Prime"):printf("Prime");
+    (prime==1)?printf("Not Prime"):printf("Prime");
 }
     
