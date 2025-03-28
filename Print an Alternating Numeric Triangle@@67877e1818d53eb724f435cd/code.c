@@ -5,10 +5,10 @@ int main(){
     for(int i=1; i<=N; i++){
         for(int b=1; b<=i; b++){
             if((i+b)%2==0){
-                printf("1");
+                printf("1 ");
             }
             else{
-                printf("0");
+                printf("0 ");
             }
     //         if(i==1){
     //     printf("%d", 1);
@@ -23,5 +23,6 @@ int main(){
     //     printf("%d", 1);
     //    }
         }
+        printf("\n");
     }
 }
