@@ -2,9 +2,9 @@
 int main(){
     int i, j , n, m;
     scanf("%d", &n);
-    m=n/2+1;
-    for(i=1;i<=m;i++){
-        for(j=1; j<=m-i; j++){
+    // m=n/2+1;
+    for(i=1;i<=n;i++){
+        for(j=1; j<=n-i; j++){
             printf(" ");
         }
         for(j=1; j<=2*i-1; j++){
@@ -12,11 +12,11 @@ int main(){
         }
         printf("\n");
     }
-    for(i=m+1; i<=n; i++){
-        for(j=1; j<=(i-m); j++){
+    for(i=n+1; i<=2*n-1; i++){
+        for(j=1; j<=(i-n); j++){
             printf(" ");
         }
-        for(j=1; j<=2*(n-i)+1; j++){
+        for(j=1; j<=2*((2*n-1)-i)+1; j++){
             printf("*");
         }
         printf("\n");
