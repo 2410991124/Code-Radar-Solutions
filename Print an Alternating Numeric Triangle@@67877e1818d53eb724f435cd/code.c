@@ -10,7 +10,7 @@ int main(){
         break;
        }
        else if("b%2==0"){
-        printf("%d", 0);
+        printf("%d ", 0);
         // printf("\n");
        }
        else{
