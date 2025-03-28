@@ -11,7 +11,7 @@ int main(){
        }
        else if("b%2==0"){
         printf("%d", 0);
-        printf("\n");
+        // printf("\n");
        }
        else{
         printf("%d", 1);
