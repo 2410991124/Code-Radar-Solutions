@@ -19,15 +19,15 @@ int main(){
             if(a[i]>smax && a[i]!=max){
                 smax=a[i];
                 f=1;
-                // break;
+                break;
             }
         }
     }
     if(f==1){
         printf("%d", smax);
     }
-    else{
-        printf("-1");
-    }
+    // else{
+    //     printf("-1");
+    // }
     return 0;
 }
