@@ -33,22 +33,15 @@
 // }
 
 #include <stdio.h>
-
 int main() {
     int N;
     scanf("%d", &N);
-
-    // if (N < 2) {
-    //     printf("-1\n");
-    //     return 0;
-    // }
-
     int a[N];
     for (int i = 0; i < N; i++) {
         scanf("%d", &a[i]);
     }
     int max = a[0];
-    int smax = -1; 
+    int smax = a[0]; 
     for (int i = 1; i < N; i++) {
         if (a[i] > max) {
             smax = max;
