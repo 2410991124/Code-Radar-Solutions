@@ -1,33 +1,31 @@
 #include <stdio.h>
-int main(){
+
+int main() {
     int N;
     scanf("%d", &N);
     int a[N];
-    for(int i=0; i<N; i++){
+    for (int i = 0; i < N; i++) {
         scanf("%d ", &a[i]);
     }
-    int max= a[0];
-    int smax= a[0];
-    int f=0;
-    for(int i=0; i<N; i++){
-        f=0;
-        if(a[i]>max){
-            smax=max;
-            max=a[i];
-        }
-        else{
-            if(a[i]>smax && a[i]!=max){
-                smax=a[i];
-                f=1;
-                break;
+
+    // Sort the array using bubble sort (without library)
+    for (int i = 0; i < N - 1; i++) {
+        for (int j = 0; j < N - i - 1; j++) {
+            if (a[j] > a[j + 1]) {
+                // Swap a[j] and a[j+1]
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
             }
         }
     }
-    if(f==1){
-        printf("%d", smax);
+
+    // After sorting, the second largest element will be at index N-2
+    if (N >= 2) {
+        printf("%d\n", a[N - 2]);
+    } else {
+        printf("-1\n"); // If the array has less than 2 elements
     }
-    else{
-        printf("-1");
-    }
+
     return 0;
 }
