@@ -2,9 +2,9 @@
 int reverse(int arr[], int x, int y){
     int temp;
     for(int r=x, j=y; r<=j; r++, j--){
-        temp=a[r];
-        a[r]=a[j];
-        a[j]=temp;
+        temp=arr[r];
+        arr[r]=arr[j];
+        arr[j]=temp;
     }
     return 0;
 }
