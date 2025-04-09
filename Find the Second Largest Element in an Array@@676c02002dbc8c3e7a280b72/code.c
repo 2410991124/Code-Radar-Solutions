@@ -41,7 +41,7 @@ int main() {
         scanf("%d", &a[i]);
     }
     int max = a[0];
-    int smax = -1; 
+    int smax = -70; 
     for (int i = 1; i < N; i++) {
         if (a[i] > max) {
             smax = max;
