@@ -62,9 +62,10 @@ int main() {
         }
         if (all_same) {
             printf("-1\n");
-        } else if (N >= 2) {
-            printf("-1\n");
         }
+        // } else if (N >= 2) {
+        //     printf("-1\n");
+        // }
     }
     return 0;
 }
