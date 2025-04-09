@@ -11,8 +11,6 @@ int main(){
         p=1;
         if(i>0 && a[i]<=a[i-1]){
             p=0;
-            // printf("%d", a[i]);
-            // break;
         }
         if(i<N-1 && a[i]<=a[i+1]){
             p=0;
@@ -20,7 +18,6 @@ int main(){
         if(p==1){
             printf("%d", a[i]);
             break;
-            // return 0;
         }
     }
     if(p==0){
