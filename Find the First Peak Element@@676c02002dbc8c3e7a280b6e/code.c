@@ -8,6 +8,7 @@ int main(){
         scanf("%d\n", &a[i]);
     }
     for(int i=0; i<N; i++){
+        p=1;
         if(i>0 && a[i]<=a[i-1]){
             p=0;
             // printf("%d", a[i]);
@@ -18,8 +19,8 @@ int main(){
         }
         if(p){
             printf("%d", a[i]);
-            // break;
-            return 0;
+            break;
+            // return 0;
         }
     }
     return 0;
