@@ -1,7 +1,7 @@
 #include <stdio.h>
 int reverse(int arr[], int x, int y){
     int temp;
-    for(int r=x, j=y; i<=j; i++, j--){
+    for(int r=x, j=y; r<=j; r++, j--){
         temp=a[r];
         a[r]=a[j];
         a[j]=temp;
