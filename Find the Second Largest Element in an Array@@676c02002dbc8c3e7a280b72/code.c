@@ -53,16 +53,17 @@ int main() {
     if (smax != -1) {
         printf("%d\n", smax);
     } else {
-        int all_same = 1;
-        for (int i = 1; i < N; i++) {
-            if (a[i] != a[0]) {
-                all_same = 0;
-                break;
-            }
-        }
-        if (all_same) {
-            printf("-1\n");
-        }
+        printf("-1");
+        // int all_same = 1;
+        // for (int i = 1; i < N; i++) {
+        //     if (a[i] != a[0]) {
+        //         all_same = 0;
+        //         break;
+        //     }
+        // }
+        // if (all_same) {
+        //     printf("-1\n");
+        // }
         // } else if (N >= 2) {
         //     printf("-1\n");
         // }
