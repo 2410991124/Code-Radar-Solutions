@@ -1,6 +1,7 @@
 int fibonacciSeries(int x){
     int f=0, s=1, r;
     if(x==1){
+        f=0;
         return f;
     }
     else if(x==2){
