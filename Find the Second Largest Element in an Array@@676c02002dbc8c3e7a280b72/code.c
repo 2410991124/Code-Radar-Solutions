@@ -8,8 +8,9 @@ int main(){
     }
     int max= a[0];
     int smax= a[0];
+    int f=0;
     for(int i=0; i<N; i++){
-        int f=0;
+        f=0;
         // for(j=1; j<N; j++){
         //     if(a[i])
         // }
