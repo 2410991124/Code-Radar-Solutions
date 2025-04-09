@@ -10,10 +10,12 @@ int fibonacciSeries(int x){
         printf("%d ", s);
     }
     else{
-        for(int i=1; i<=x; i++){
+        printf("%d ", f);
+        printf("%d ", s);
+        for(int i=3; i<=x; i++){
             // f=0;
-            printf("%d ", f);
-            printf("%d ", s);
+            // printf("%d ", f);
+            // printf("%d ", s);
             r=f+s;
             printf("%d ", r);
             f=s;
