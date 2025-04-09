@@ -19,7 +19,7 @@ int main(){
             if(a[i]>smax && a[i]!=max){
                 smax=a[i];
                 f=1;
-                break;
+                // break;
             }
         }
     }
