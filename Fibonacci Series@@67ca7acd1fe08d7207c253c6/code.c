@@ -10,6 +10,7 @@ int fibonacciSeries(int x){
     }
     else{
         for(int i=1; i<=x; i++){
+            f=0;
             r=f+s;
             printf("%d ", r);
             f=s;
