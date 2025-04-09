@@ -18,7 +18,8 @@ int main(){
         }
         if(p==1){
             printf("%d", a[i]);
-            break;
+            // break;
+            return 0;
         }
     }
     return 0;
