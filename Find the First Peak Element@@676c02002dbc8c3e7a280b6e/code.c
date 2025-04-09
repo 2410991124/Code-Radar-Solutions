@@ -9,7 +9,7 @@ int main(){
     for(int i=0; i<N; i++){
         if(a[i]>a[i-1] && a[i]>a[i+1]){
             printf("%d", a[i]);
-            break;
+            // break;
         }
         // else if(a[i]>a[i-1]){
         //     printf("%d", a[i]);
