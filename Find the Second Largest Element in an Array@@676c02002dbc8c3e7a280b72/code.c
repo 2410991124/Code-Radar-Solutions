@@ -54,7 +54,7 @@ int main() {
         printf("%d\n", smax);
     }
     else if(N==1){
-        printf("%d", a[0]);
+        printf("%d", a[i]);
     } else {
         printf("-1");
         // int all_same = 1;
