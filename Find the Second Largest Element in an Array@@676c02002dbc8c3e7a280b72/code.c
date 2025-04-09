@@ -11,15 +11,12 @@ int main(){
     int f=0;
     for(int i=0; i<N; i++){
         f=0;
-        // for(j=1; j<N; j++){
-        //     if(a[i])
-        // }
         if(a[i]>max){
             smax=max;
             max=a[i];
         }
         else{
-            if(a[i]>smax){
+            if(a[i]>smax && a[i]!=max){
                 smax=a[i];
                 f=1;
                 break;
@@ -32,6 +29,5 @@ int main(){
     else{
         printf("-1");
     }
-    // printf("%d", smax);
     return 0;
 }
