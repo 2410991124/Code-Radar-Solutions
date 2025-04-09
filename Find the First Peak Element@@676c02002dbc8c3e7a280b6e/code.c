@@ -11,6 +11,12 @@ int main(){
             printf("%d", a[i]);
             break;
         }
+        else if(a[i]>a[i-1]){
+            printf("%d", a[i]);
+        }
+        else{
+            printf("-1");
+        }
     }
     return 0;
 }
