@@ -26,8 +26,8 @@ int main(){
     if(f==1){
         printf("%d", smax);
     }
-    // else{
-    //     printf("-1");
-    // }
+    else{
+        printf("-1");
+    }
     return 0;
 }
