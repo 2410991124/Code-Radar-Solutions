@@ -22,6 +22,7 @@ int main(){
             if(a[i]>smax){
                 smax=a[i];
                 f=1;
+                break;
             }
         }
     }
