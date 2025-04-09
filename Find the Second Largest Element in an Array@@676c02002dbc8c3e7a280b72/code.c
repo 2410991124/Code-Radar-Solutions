@@ -1,31 +1,77 @@
+// #include <stdio.h>
+// int main(){
+//     int N;
+//     scanf("%d", &N);
+//     int a[N];
+//     for(int i=0; i<N; i++){
+//         scanf("%d ", &a[i]);
+//     }
+//     int max= a[0];
+//     int smax= a[0];
+//     int f=0;
+//     for(int i=0; i<N; i++){
+//         f=0;
+//         if(a[i]>max){
+//             smax=max;
+//             max=a[i];
+//         }
+//         else{
+//             if(a[i]>smax && a[i]!=max){
+//                 smax=a[i];
+//                 f=1;
+//                 break; 
+//             }
+//         }
+//     }
+//     if(f==1){
+//         printf("%d", smax);
+//     }
+//     else{
+//         printf("-1");
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
     int N;
     scanf("%d", &N);
+
+    if (N < 2) {
+        printf("-1\n");
+        return 0;
+    }
+
     int a[N];
     for (int i = 0; i < N; i++) {
-        scanf("%d ", &a[i]);
+        scanf("%d", &a[i]);
     }
-
-    // Sort the array using bubble sort (without library)
-    for (int i = 0; i < N - 1; i++) {
-        for (int j = 0; j < N - i - 1; j++) {
-            if (a[j] > a[j + 1]) {
-                // Swap a[j] and a[j+1]
-                int temp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = temp;
-            }
+    int max = a[0];
+    int smax = -1; 
+    for (int i = 1; i < N; i++) {
+        if (a[i] > max) {
+            smax = max;
+            max = a[i];
+        } else if (a[i] > smax && a[i] != max) {
+            smax = a[i];
         }
     }
-
-    // After sorting, the second largest element will be at index N-2
-    if (N >= 2) {
-        printf("%d\n", a[N - 2]);
+    if (smax != -1) {
+        printf("%d\n", smax);
     } else {
-        printf("-1\n"); // If the array has less than 2 elements
+        int all_same = 1;
+        for (int i = 1; i < N; i++) {
+            if (a[i] != a[0]) {
+                all_same = 0;
+                break;
+            }
+        }
+        if (all_same) {
+            printf("-1\n");
+        } else if (N >= 2) {
+            printf("-1\n");
+        }
     }
-
     return 0;
 }
