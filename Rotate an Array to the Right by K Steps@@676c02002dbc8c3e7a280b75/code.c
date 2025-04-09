@@ -20,7 +20,7 @@ int main(){
     k=k%N;
     reverse(a,0,N-1);
     reverse(a,0,k-1);
-    reverse(a,k,n-1);
+    reverse(a,k,N-1);
     for(int i=0; i<N; i++){
         printf("%d ", a[i]);
     }
