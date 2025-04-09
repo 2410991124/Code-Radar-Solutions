@@ -2,8 +2,8 @@
 int reverse(int arr[], int x, int y){
     int temp;
     for(int r=x, j=y; i<=j; i++, j--){
-        temp=a[i];
-        a[i]=a[j];
+        temp=a[r];
+        a[r]=a[j];
         a[j]=temp;
     }
     return 0;
