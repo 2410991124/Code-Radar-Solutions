@@ -9,6 +9,7 @@ int main(){
     int max= a[0];
     int smax= a[0];
     for(int i=0; i<N; i++){
+        int f=0;
         // for(j=1; j<N; j++){
         //     if(a[i])
         // }
@@ -19,9 +20,16 @@ int main(){
         else{
             if(a[i]>smax){
                 smax=a[i];
+                f=1;
             }
         }
     }
-    printf("%d", smax);
+    if(f==1){
+        printf("%d", smax);
+    }
+    else{
+        printf("-1");
+    }
+    // printf("%d", smax);
     return 0;
 }
