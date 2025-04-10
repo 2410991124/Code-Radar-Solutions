@@ -9,7 +9,7 @@ int main(){
     int c=0;
     for(int i=0; i<N; i++){
         int p=1;
-        for(int j=2; j<=N/2;j++){
+        for(float j=2; j<=N/2;j++){
             if(a[i]%i==0){
                 p=0;
                 break;
