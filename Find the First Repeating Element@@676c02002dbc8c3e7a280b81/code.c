@@ -12,6 +12,7 @@ int main(){
             printf("%d", a[i]);
             break;
         }
+        break;
     }
     // printf("%d", a[i]);
     return 0;
