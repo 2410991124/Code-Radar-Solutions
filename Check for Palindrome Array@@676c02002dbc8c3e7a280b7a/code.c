@@ -13,11 +13,11 @@ int main(){
             break;
         }
     }
-    if(p==0){
-        printf("NO");
+    if(p){
+        printf("YES");
     }
     else{
-        printf("YES");
+        printf("NO");
     }
     return 0;
 }
