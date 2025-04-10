@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main(){
-    int N;
+    int N, i;
     scanf("%d", &N);
     int a[N];
-    for(int i=0; i<N; i++){
+    for(i=0; i<N; i++){
         scanf("%d", &a[i]);
     }
-    for(int  i=0; i<N; i++){
+    for(i=0; i<N; i++){
         for(int j=1; j<N; j++){
             if(a[i]==a[j]);
             break;
