@@ -10,7 +10,7 @@ int main(){
     for(int i=0; i<N; i++){
         for(int j=2; j<=N/2;j++){
             if(a[i]%i==0){
-                p=0;
+                // p=0;
                 break;
             }
             else{
