@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int N, i;
+    int N, i, c;
     scanf("%d", &N);
     int a[N];
     for(i=0; i<N; i++){
@@ -8,7 +8,7 @@ int main(){
     }
     // int c=0;
     for(i=0; i<N; i++){
-        int c=0;
+        c=0;
         for(int j=1; j<N; j++){
             if(a[i]==a[j]);
             printf("%d", a[i]);
