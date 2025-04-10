@@ -7,13 +7,13 @@ int main(){
         scanf("%d", &N);
     }
     int p=1;
-    for(int i=0, j=N-1; i<=j; i++, j--){
+    for(int i=0, j=N-1; i<j; i++, j--){
         if(a[i]!=a[j]){
             p=0;
             break;
         }
     }
-    if(p){
+    if(p==1){
         printf("YES");
     }
     else{
