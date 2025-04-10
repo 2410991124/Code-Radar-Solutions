@@ -8,7 +8,11 @@ int main(){
     }
     int p=1;
     for(int i=0, j=N-1; i<j; i++, j--){
-        if(a[i]!=a[j]){
+        if(a[i]==a[j]){
+            p=1;
+            // break;
+        }
+        else{
             p=0;
             break;
         }
