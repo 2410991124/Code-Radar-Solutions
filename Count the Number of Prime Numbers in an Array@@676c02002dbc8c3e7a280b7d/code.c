@@ -61,11 +61,11 @@
 
 char Prime(int num) {
     if (num <= 1) {
-        return 'n';
+        return '';
     }
     for (int i = 2; i <= num/2; i++) {
         if (num % i == 0) {
-            return 'n';
+            return '';
         }
     }
     return 'y';
