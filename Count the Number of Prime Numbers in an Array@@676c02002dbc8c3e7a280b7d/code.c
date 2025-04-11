@@ -65,10 +65,10 @@ char Prime(int num) {
     }
     for (int i = 2; i <= num/2; i++) {
         if (num % i == 0) {
-            return 'no';
+            return 'n';
         }
     }
-    return 'yes';
+    return 'y';
 }
 
 int main() {
