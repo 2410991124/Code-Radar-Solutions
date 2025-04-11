@@ -59,7 +59,7 @@
 
 #include <stdio.h>
 
-int Prime(int num) {
+char Prime(int num) {
     if (num <= 1) {
         return 0;
     }
@@ -68,7 +68,7 @@ int Prime(int num) {
             return 0;
         }
     }
-    return 2;
+    return 'yes';
 }
 
 int main() {
