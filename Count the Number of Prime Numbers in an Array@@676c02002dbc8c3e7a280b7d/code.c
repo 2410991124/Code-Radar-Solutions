@@ -59,16 +59,16 @@
 
 #include <stdio.h>
 
-char Prime(int num) {
+int Prime(int num) {
     if (num <= 1) {
-        return '';
+        return 0;
     }
     for (int i = 2; i <= num/2; i++) {
         if (num % i == 0) {
-            return '';
+            return 0;
         }
     }
-    return 'y';
+    return 1;
 }
 
 int main() {
