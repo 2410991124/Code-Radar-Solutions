@@ -61,7 +61,7 @@
 
 char Prime(int num) {
     if (num <= 1) {
-        return 'no';
+        return 'n';
     }
     for (int i = 2; i <= num/2; i++) {
         if (num % i == 0) {
