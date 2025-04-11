@@ -24,28 +24,59 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int Prime(int num) {
+//     if (num <= 1) {
+//         return 0;
+//     }
+//     for (int i = 2; i <= num/2; i++) {
+//         if (num % i == 0) {
+//             return 0;
+//         }
+//         // return 0;
+//         else(){
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+//     int a[N];
+//     for (int i = 0; i < N; i++) {
+//        scanf("%d", &a[i]);
+//     }
+//     int primeCount = 0;
+//     for (int i = 0; i < N; i++) {
+//         if (Prime(a[i])) {
+//             primeCount++;
+//         }
+//     }
+//     printf("%d", primeCount);
+//     return 0;
+// }
+
 #include <stdio.h>
+
 int Prime(int num) {
     if (num <= 1) {
         return 0;
     }
-    for (int i = 2; i <= num/2; i++) {
+    for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
-            return 0;
-        }
-        // return 0;
-        else(){
             return 0;
         }
     }
     return 1;
 }
+
 int main() {
     int N;
     scanf("%d", &N);
     int a[N];
     for (int i = 0; i < N; i++) {
-       scanf("%d", &a[i]);
+        scanf("%d", &a[i]);
     }
     int primeCount = 0;
     for (int i = 0; i < N; i++) {
